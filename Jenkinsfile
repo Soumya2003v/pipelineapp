@@ -1,13 +1,10 @@
 pipeline {
     agent any
-    tools {
-        maven 'maven1'
-    }
     stages {
         stage('Maven clean') {
             steps {
                 
-                    sh 'mvn clean'
+                    echo 'mvn clean'
                 }
             }
 
